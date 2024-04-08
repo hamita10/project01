@@ -21,7 +21,7 @@ class FrontendController extends Controller
         $thoughts = thoughts::get();
 
         
-        return view('Fronted.Index',compact('course','subject','teacher','thoughts'));
+        return view('welcome',compact('course','subject','teacher','thoughts'));
     }
 
     public function Store(Request $request) 
